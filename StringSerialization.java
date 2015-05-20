@@ -1,3 +1,4 @@
+// Coding interview in EA
 // Java Serialization: Converting an object to a byte stream, so that it can be decoded back into an object
 // Convert a List<String> object into a String object so that it can be decoded back.
 //   encoder: List<String> --> String
@@ -25,7 +26,7 @@ public class StringEncoder{
         int i = 0;
         while(i<s.length()){           
             int index = s.indexOf(DELIMITER, i);
-            int len = Integer.parseInteger( s.substring(i,index) );
+            int len = Integer.parseInt( s.substring(i,index) );
             res.add( s.substring(index+1, index+len+1) );
             i = index+len+1; 
         }
